@@ -22,42 +22,37 @@ const MaterialCard = ({
   classes,
 }) => {
   return (
-    <Card className={classes.cardWrapper}>
-      <CardMedia
-        onClick={handleGoToDetails}
-        className={classes.image}
-        component="img"
-        image={image}
-        alt={name}
-      />
-      <CardContent className={classes.cardContent}>
+    <Box className={classes.cardWrapper}>
+      <Box className={classes.image}>
+        <img src={image} alt={name}  onClick={handleGoToDetails}/>
+      </Box>
+      <Box className={classes.cardContent}>
         <Typography
           className={classes.name}
           gutterBottom
           variant="h5"
-          component="div"
         >
           {name}
         </Typography>
-        <Typography variant="body2">Price: {price} coins</Typography>
-      </CardContent>
-      <CardActions>
+        <Typography variant="body2">Price: {price} $</Typography>
+      </Box>
+      <Box className={classes.button}>
         <Button
           className={classes.btn}
           variant="outlined"
-          color="success"
+          color="primary"
           onClick={handleGoToDetails}
           size="small"
         >
           GO TO DETAILS
         </Button>
-      </CardActions>
-      <CardActions>
+      </Box>
+      <Box className={classes.button}>
         {!isAddPokemonToCart ? (
           <Button
             className={classes.btn}
             variant="outlined"
-            color="success"
+            color="primary"
             onClick={handleAddPokemonToCart}
             size="small"
           >
@@ -74,8 +69,8 @@ const MaterialCard = ({
             IN THE CART
           </Button>
         )}
-      </CardActions>
-    </Card>
+      </Box>
+    </Box>
   );
 };
 

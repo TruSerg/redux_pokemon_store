@@ -10,6 +10,7 @@ const CustomPagination = ({ currentPage, onPageChange, pageCount }) => {
       count={20}
       variant="outlined"
       shape="rounded"
+      color="primary"
     />
   );
 };

@@ -29,7 +29,7 @@ const RegistrationForm = ({
 }) => {
   return (
     <Box
-      style={{ backgroundImage: `url(${pikachu})` }}
+      style={{ backgroundImage: `url(${pikachu})`, backgroundRepeat: "no-repeat", backgroundPosition: "50% 50%", backgroundSize: "cover" }}
       className={classes.wrapper}
     >
       <Box className={classes.form}>

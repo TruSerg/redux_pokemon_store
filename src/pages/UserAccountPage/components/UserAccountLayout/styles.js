@@ -27,6 +27,11 @@ const styles = () => ({
     maxWidth: "500px",
     borderRadius: "5px",
   },
+
+  accordionArea: {
+    display: "flex",
+    flexDirection: "column",
+  },
 });
 
 export default styles;

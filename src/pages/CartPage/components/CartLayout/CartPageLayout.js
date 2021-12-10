@@ -71,7 +71,7 @@ const CartPageLayout = ({
                       </Button>
                     </Box>
                   </Box>
-                  <div>{item.quantity * item.price} coins</div>
+                  <div>{item.quantity * item.price} $</div>
                 </Box>
               </Box>
             )}
@@ -81,7 +81,7 @@ const CartPageLayout = ({
           <h3 className={classes.confirmTitle}>CONFIRM THE ORDER</h3>
           <Box>
             <span className={classes.confirmItem}>TOTAL PRICE:</span>
-            <span className={classes.confirmItem}>{totalPrice} coins</span>
+            <span className={classes.confirmItem}>{totalPrice} $</span>
             <Button
               disabled={totalPrice === 0}
               onClick={handleConfirmOrder}

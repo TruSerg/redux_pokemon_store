@@ -35,16 +35,16 @@ const UserAccountPageLayout = ({
         <Box className={classes.accountInfo}>
           <CardContent>
             <h2 className={classes.accountSubtitle}>PERSONAL DATA</h2>
-            <Typography sx={{ mt: 4, mb: 2 }} variant="h6">
+            <Typography sx={{ mt: 2, mb: 2 }} variant="h6">
               {`${info.firstName} ${info.lastName}`}
             </Typography>
-            <Typography sx={{ mt: 4, mb: 2 }} variant="h6">
+            <Typography sx={{ mt: 2, mb: 2 }} variant="h6">
               {`Email: ${info.email}`}
             </Typography>
-            <Typography sx={{ mt: 4, mb: 2 }} variant="h6">
+            <Typography sx={{ mt: 2, mb: 2 }} variant="h6">
               {`Phone: ${info.phone}`}
             </Typography>
-            <Typography sx={{ mt: 4, mb: 2 }} variant="h6">
+            <Typography sx={{ mt: 2, mb: 2 }} variant="h6">
               {`Gender: ${info.gender}`}
             </Typography>
           </CardContent>
@@ -52,19 +52,19 @@ const UserAccountPageLayout = ({
         {ordersList?.map((order) => (
           <Box key={order._id}>
             <Box className={classes.accordion}>
-              <Accordion color="success">
+              <Accordion>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  
-                    <Typography>Total price: {order.totalPrice} coins</Typography>
+                  <Box className={classes.accordionArea}>
+                  <Typography>Total price: {order.totalPrice} $</Typography>               
                     <Typography>
                       Order date:{" "}
                       {moment(order.createdAt).format("MMM Do YYYY, h:mm a")}
-                    
                   </Typography>
+                    </Box>
                 </AccordionSummary>
                 <AccordionDetails>
                     <TableContainer component={Paper}>
@@ -89,7 +89,7 @@ const UserAccountPageLayout = ({
                               <TableCell align="left">
                                 {item.quantity}
                               </TableCell>
-                              <TableCell align="left">{item.price}</TableCell>
+                              <TableCell align="left">{item.price} $</TableCell>
                             </TableRow>
                           ))}
                         </TableBody>
