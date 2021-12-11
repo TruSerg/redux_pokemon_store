@@ -40,23 +40,31 @@ const CartPageLayout = ({
                     />
                     <p className={classes.name}>{item.name}</p>
                   </Box>
-                  <Box className={classes.buttons}>
+                  <Box className={classes.cardButtonsArea}>
                     <Box className={classes.cardButtons}>
-                      <button
-                        className={classes.cardBtn}
-                        onClick={() => handlePokemonQuantityIncrement(item)}
-                      >
-                        +
-                      </button>
-                      <span className={classes.cardDisplay}>
-                        {item.quantity}
-                      </span>
-                      <button
-                        className={classes.cardBtn}
-                        onClick={() => handlePokemonQuantityDecrement(item)}
-                      >
-                        -
-                      </button>
+                      <Box className={classes.button}>
+                        <button
+                          className={classes.cardBtn}
+                          onClick={() => handlePokemonQuantityIncrement(item)}
+                        >
+                          +
+                        </button>
+                      </Box>
+
+                      <Box>
+                        <span className={classes.cardDisplay}>
+                          {item.quantity}
+                        </span>
+                      </Box>
+
+                      <Box>
+                        <button
+                          className={classes.cardBtn}
+                          onClick={() => handlePokemonQuantityDecrement(item)}
+                        >
+                          -
+                        </button>
+                      </Box>
                     </Box>
 
                     <Box>

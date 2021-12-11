@@ -3,13 +3,13 @@ const styles = () => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "130vh",
+    minHeight: "100vh",
   },
 
   progressArea: {
-    display: "flex",
-    alignItems: "center",
-    margin: "0 auto",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
   },
 
   formArea: {

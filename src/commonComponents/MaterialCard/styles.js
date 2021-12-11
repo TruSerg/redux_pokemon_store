@@ -6,11 +6,11 @@ const styles = () => ({
     flexDirection: "column",
     border: "1px solid gray",
     borderRadius: "5px",
-    transition: "0.4s",
+    transition: "all 0.3s linear",
     backgroundColor: "#00FF7F",
 
     "&:hover": {
-      boxShadow: "4px 6px 5px rgba(0, 0, 0, 0.7)",
+      boxShadow: "4px 4px 5px rgba(0, 0, 0, 0.5)",
       color: "#FF0000",
       backgroundColor: "#7FFFD4",
     },

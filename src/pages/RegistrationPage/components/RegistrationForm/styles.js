@@ -5,11 +5,12 @@ const styles = () => ({
     margin: "0 auto",
   },
 
-  wrapper: {
+  registrationWrapper: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    minHeight: "130vh",
+    minHeight: "100vh",
+    position: "relative",
   },
 
   form: {
@@ -45,6 +46,9 @@ const styles = () => ({
 
   snackBar: {
     display: "flex",
+    position: "absolute",
+    top: "50%",
+    left: "50%",
   },
 });
 

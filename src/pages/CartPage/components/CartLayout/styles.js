@@ -2,17 +2,19 @@ const styles = () => ({
   cartWrapper: {
     padding: "50px 0 50px 0",
     background: "linear-gradient(155deg,#0865d5,#07df24,#e6ab12)",
+    minHeight: "100vh",
   },
 
   orderTitle: {
     textAlign: "center",
     marginBottom: "30px",
-    fontSize: "30px",
+    fontSize: "25px",
   },
 
   cardsArea: {
     display: "flex",
     flexWrap: "wrap",
+    justifyContent: "center",
     margin: "0 -10px",
     marginBottom: "20px",
   },
@@ -23,6 +25,7 @@ const styles = () => ({
 
   name: {
     marginBottom: "20px",
+    fontSize: "20px",
   },
 
   card: {
@@ -32,8 +35,8 @@ const styles = () => ({
     border: "1px solid gray",
     borderRadius: "5px",
     marginBottom: "20px",
-    boxShadow: "4px 5px 4px rgba(0, 0, 0, 0.5)",
     backgroundColor: "#00FF7F",
+    boxShadow: "4px 5px 4px rgba(0, 0, 0, 0.5)",
     transition: "0.4s",
 
     "&:hover": {
@@ -47,44 +50,56 @@ const styles = () => ({
   },
 
   cardBtn: {
-    minWidth: "26px",
-    boxShadow: "2px 2px 2px rgba(0, 0, 0, 1)",
+    minWidth: "25px",
+    boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.7)",
     backgroundColor: "#ADFF2F",
-
-    "&:first-child": {
-      marginRight: "10px",
-    },
+    minHeight: "25px",
+    transition: "backgroundColor 0.3s linear",
+    fontSize: "16px",
 
     "&:active": {
       top: "3px",
-      boxShadow: "1px 1px 1px rgba(0, 0, 0, 1)",
+      boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.7)",
+    },
+
+    "&:hover": {
+      backgroundColor: "#00FF00",
+      color: "#FF0000",
     },
   },
 
   cardDisplay: {
-    display: "inline-block",
-    minWidth: "26px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    minWidth: "25px",
     borderRadius: "2px",
     border: "1px solid #000",
     marginRight: "10px",
-    minHeight: "26px",
+    minHeight: "25px",
     backgroundColor: "#ADFF2F",
   },
 
-  buttons: {
+  cardButtonsArea: {
     marginBottom: "20px",
   },
 
   cardButtons: {
+    display: "flex",
+    justifyContent: "center",
     marginBottom: "20px",
   },
 
+  button: {
+    marginRight: "10px",
+  },
+
   cardButton: {
-    boxShadow: "3px 3px 2px rgba(0, 0, 0, 1)",
+    boxShadow: "3px 3px 2px rgba(0, 0, 0, 0.7)",
 
     "&:active": {
       top: "2px",
-      boxShadow: "1px 1px 1px rgba(0, 0, 0, 1)",
+      boxShadow: "1px 1px 1px rgba(0, 0, 0, 0.7)",
     },
   },
 

@@ -24,7 +24,6 @@ const PokemonPageLayout = ({
     <Box className={classes.pokemonsWrapper}>
       <Container>
         <h1 className={classes.orderTitle}>POKEMONS</h1>
-
         <Box className={classes.cardsArea}>
           {isLoading ? (
             <Box className={classes.progressArea}>

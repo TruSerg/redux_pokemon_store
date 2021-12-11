@@ -35,7 +35,7 @@ const styles = () => ({
 
   detailsTitle: {
     textAlign: "center",
-    fontSize: "30px",
+    fontSize: "25px",
     marginBottom: "30px",
   },
 
@@ -67,6 +67,7 @@ const styles = () => ({
 
   infoDetails: {
     marginBottom: "20px",
+    fontSize: "18px",
   },
 
   infoDetailsTitle: {
@@ -76,6 +77,7 @@ const styles = () => ({
 
   infoStats: {
     marginBottom: "10px",
+    fontSize: "18px",
   },
 });
 

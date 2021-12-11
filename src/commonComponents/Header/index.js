@@ -32,7 +32,7 @@ const Header = ({ classes }) => {
             <Box>
               <Link to={ROUTES.POKEMONS_PAGE}>
                 <IconButton color="primary">
-                  <SettingsBackupRestoreRoundedIcon />
+                  <SettingsBackupRestoreRoundedIcon fontSize="large" />
                 </IconButton>
               </Link>
             </Box>
@@ -40,17 +40,17 @@ const Header = ({ classes }) => {
               <Link to={ROUTES.CART_PAGE}>
                 <IconButton color="primary">
                   <Badge badgeContent={quantity} color="error">
-                    <ShoppingCartOutlined />
+                    <ShoppingCartOutlined fontSize="large" />
                   </Badge>
                 </IconButton>
               </Link>
               <Link to={ROUTES.USER_PAGE}>
                 <IconButton color="primary">
-                  <PersonOutline />
+                  <PersonOutline fontSize="large" />
                 </IconButton>
               </Link>
               <IconButton color="primary" onClick={handleLogout}>
-                <Logout />
+                <Logout fontSize="large" />
               </IconButton>
             </Box>
           </Box>
@@ -58,13 +58,13 @@ const Header = ({ classes }) => {
           <Box>
             <Link to={ROUTES.LOGIN}>
               <IconButton color="primary">
-                <Login />
+                <Login fontSize="large" />
               </IconButton>
             </Link>
 
             <Link to={ROUTES.REGISTRATION}>
               <IconButton color="primary">
-                <HowToReg />
+                <HowToReg fontSize="large" />
               </IconButton>
             </Link>
           </Box>

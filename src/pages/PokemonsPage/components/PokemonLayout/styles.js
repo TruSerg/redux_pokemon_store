@@ -4,7 +4,7 @@ const styles = () => ({
     background: "linear-gradient(155deg,#0865d5,#07df24,#e6ab12)",
   },
 
-  orderTitle: { textAlign: "center", fontSize: "30px", marginBottom: "30px" },
+  orderTitle: { textAlign: "center", fontSize: "25px", marginBottom: "30px" },
 
   cardsArea: {
     display: "flex",
@@ -12,6 +12,7 @@ const styles = () => ({
     minHeight: "100vh",
     margin: "0 -10px",
     marginBottom: "20px",
+    justifyContent: "center",
   },
 
   card: {
