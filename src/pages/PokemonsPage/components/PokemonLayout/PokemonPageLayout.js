@@ -23,6 +23,7 @@ const PokemonPageLayout = ({
   return (
     <Box className={classes.pokemonsWrapper}>
       <Container>
+        <div className={classes.overlay} />
         <h1 className={classes.orderTitle}>POKEMONS</h1>
         <Box className={classes.cardsArea}>
           {isLoading ? (

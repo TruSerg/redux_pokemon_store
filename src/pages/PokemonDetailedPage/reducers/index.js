@@ -16,13 +16,13 @@ const pokemonDetailsPageReducer = handleActions(
     }),
     [actions.GET_POKEMON_DETAILS_SUCCESS]: (state, { payload }) => ({
       ...state,
-      info: payload.response,
+      info: { ...payload.response },
       isLoading: false,
     }),
     [actions.GET_POKEMON_DETAILS_FAIL]: (state, { payload }) => ({
       ...state,
       isLoading: false,
-      error: payload,
+      error: payload.response,
     }),
   },
   defaultState

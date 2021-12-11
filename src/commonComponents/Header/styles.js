@@ -3,7 +3,7 @@ const styles = () => ({
     display: "flex",
     alignItems: "center",
     minHeight: "80px",
-    background: "linear-gradient(90deg,#f6e641,#87b27a,#0ae762)",
+    background: "#00FFFF",
   },
 
   wrapperNav: {
@@ -13,7 +13,13 @@ const styles = () => ({
   },
 
   icon: {
-    marginRight: "30px",
+    color: "#006400",
+    transition: "all 0.3s linear",
+
+    "&:hover": {
+      transition: "all 0.3s linear",
+      color: "#4169E1",
+    },
   },
 });
 

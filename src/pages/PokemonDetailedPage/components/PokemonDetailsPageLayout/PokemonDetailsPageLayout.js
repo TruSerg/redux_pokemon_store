@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import {
   Box,
   Button,
-  CardActions,
   CircularProgress,
   Container,
   Typography,
@@ -27,12 +26,12 @@ const PokemonDetailsPageLayout = ({
     <Box className={classes.detailsWrapper}>
       <Container>
         <h1 className={classes.detailsTitle}>POKEMON DETAILS</h1>
-        <Box className={classes.detailsWrapperInfo}>
-          {isLoading ? (
-            <Box className={classes.progressArea}>
-              <CircularProgress />
-            </Box>
-          ) : (
+        {isLoading ? (
+          <Box className={classes.progressArea}>
+            <CircularProgress />
+          </Box>
+        ) : (
+          <Box className={classes.detailsWrapperInfo}>
             <Box key={info.id} className={classes.pokemonInfoWrapper}>
               <Box className={classes.pokemonWrapper}>
                 <Box>
@@ -96,8 +95,8 @@ const PokemonDetailsPageLayout = ({
                 ))}
               </Box>
             </Box>
-          )}
-        </Box>
+          </Box>
+        )}
       </Container>
     </Box>
   );

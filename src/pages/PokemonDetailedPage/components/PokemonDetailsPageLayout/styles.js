@@ -2,6 +2,13 @@ const styles = () => ({
   detailsWrapper: {
     padding: "50px 0 50px 0",
     background: "linear-gradient(155deg,#0865d5,#07df24,#e6ab12)",
+    minHeight: "100vh",
+  },
+
+  progressArea: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
   },
 
   pokemonInfoWrapper: {

@@ -5,6 +5,12 @@ const styles = () => ({
     minHeight: "100vh",
   },
 
+  progressArea: {
+	position: "absolute",
+	top: "50%",
+	left: "50%",
+ },
+
   orderTitle: {
     textAlign: "center",
     marginBottom: "30px",

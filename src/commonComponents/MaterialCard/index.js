@@ -1,8 +1,4 @@
 import {
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
   Button,
   Typography,
   Box,

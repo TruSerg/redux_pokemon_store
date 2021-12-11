@@ -32,7 +32,10 @@ const Header = ({ classes }) => {
             <Box>
               <Link to={ROUTES.POKEMONS_PAGE}>
                 <IconButton color="primary">
-                  <SettingsBackupRestoreRoundedIcon fontSize="large" />
+                  <SettingsBackupRestoreRoundedIcon
+                    className={classes.icon}
+                    fontSize="large"
+                  />
                 </IconButton>
               </Link>
             </Box>
@@ -40,17 +43,20 @@ const Header = ({ classes }) => {
               <Link to={ROUTES.CART_PAGE}>
                 <IconButton color="primary">
                   <Badge badgeContent={quantity} color="error">
-                    <ShoppingCartOutlined fontSize="large" />
+                    <ShoppingCartOutlined
+                      className={classes.icon}
+                      fontSize="large"
+                    />
                   </Badge>
                 </IconButton>
               </Link>
               <Link to={ROUTES.USER_PAGE}>
                 <IconButton color="primary">
-                  <PersonOutline fontSize="large" />
+                  <PersonOutline className={classes.icon} fontSize="large" />
                 </IconButton>
               </Link>
               <IconButton color="primary" onClick={handleLogout}>
-                <Logout fontSize="large" />
+                <Logout className={classes.icon} fontSize="large" />
               </IconButton>
             </Box>
           </Box>
@@ -58,13 +64,13 @@ const Header = ({ classes }) => {
           <Box>
             <Link to={ROUTES.LOGIN}>
               <IconButton color="primary">
-                <Login fontSize="large" />
+                <Login className={classes.icon} fontSize="large" />
               </IconButton>
             </Link>
 
             <Link to={ROUTES.REGISTRATION}>
               <IconButton color="primary">
-                <HowToReg fontSize="large" />
+                <HowToReg className={classes.icon} fontSize="large" />
               </IconButton>
             </Link>
           </Box>
