@@ -13,7 +13,7 @@ const BasicSelect = ({ value, label, name, onChange }) => {
           label={label}
           onChange={onChange}
         >
-          <MenuItem value="male">Mail</MenuItem>
+          <MenuItem value="male">Male</MenuItem>
           <MenuItem value="female">Femail</MenuItem>
         </Select>
       </FormControl>

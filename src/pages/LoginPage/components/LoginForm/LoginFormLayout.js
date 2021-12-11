@@ -27,9 +27,7 @@ const LoginFormLayout = ({
       className={classes.wrapper}
     >
       <Box className={classes.formArea}>
-			{isLoading ? ( <Box className={classes.progressArea}>
-              <CircularProgress />
-            </Box>) : (  <Box className={classes.form}>
+        <Box className={classes.form}>
           <form onSubmit={onSubmit} id="myForm">
             <Box>
               <Input
@@ -74,8 +72,7 @@ const LoginFormLayout = ({
             </Box>
             {error && <div className={classes.error}>{error}!!!</div>}
           </form>
-        </Box>)}
-      
+        </Box>
       </Box>
     </Box>
   );

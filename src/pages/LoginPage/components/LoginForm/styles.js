@@ -7,9 +7,9 @@ const styles = () => ({
   },
 
   progressArea: {
-    position: "absolute",
-    top: "50%",
-    left: "50%",
+    display: "flex",
+    alignItems: "center",
+    justufyContent: "center",
   },
 
   formArea: {
