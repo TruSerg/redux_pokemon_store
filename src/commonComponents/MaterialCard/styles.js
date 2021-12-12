@@ -31,10 +31,6 @@ const styles = () => ({
     textAlign: "center",
   },
 
-  name: {
-    fontSize: "50px",
-  },
-
   button: {
     marginBottom: "10px",
     textAlign: "center",

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-import { Button, Alert, Box, Container, CircularProgress } from "@mui/material";
+import { Button, Alert, Box, Container } from "@mui/material";
 import { withStyles } from "@mui/styles";
 import { Snackbar } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
@@ -10,7 +10,6 @@ import List from "../../../../commonComponents/List";
 import styles from "./styles";
 
 const CartPageLayout = ({
-  isLoading,
   itemsList,
   totalPrice,
   handleGoToDetails,
@@ -79,7 +78,7 @@ const CartPageLayout = ({
                       </Button>
                     </Box>
                   </Box>
-                  <div>{item.quantity * item.price} $</div>
+                  <div>{item.quantity * item.price} coins</div>
                 </Box>
               </Box>
             )}
@@ -89,7 +88,7 @@ const CartPageLayout = ({
           <h3 className={classes.confirmTitle}>CONFIRM THE ORDER</h3>
           <Box>
             <span className={classes.confirmItem}>TOTAL PRICE:</span>
-            <span className={classes.confirmItem}>{totalPrice} $</span>
+            <span className={classes.confirmItem}>{totalPrice} coins</span>
             <Button
               disabled={totalPrice === 0}
               onClick={handleConfirmOrder}

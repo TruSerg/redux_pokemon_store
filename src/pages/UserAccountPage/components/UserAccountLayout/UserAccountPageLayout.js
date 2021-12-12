@@ -15,7 +15,6 @@ import {
   AccordionDetails,
   Box,
   Container,
-  CircularProgress,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { withStyles } from "@mui/styles";
@@ -24,7 +23,7 @@ import moment from "moment";
 
 import styles from "./styles";
 
-const UserAccountPageLayout = ({ info, ordersList, classes, isLoading }) => {
+const UserAccountPageLayout = ({ info, ordersList, classes }) => {
   return (
     <Box className={classes.userWrapper}>
       <Container>
@@ -58,7 +57,9 @@ const UserAccountPageLayout = ({ info, ordersList, classes, isLoading }) => {
                     id="panel1a-header"
                   >
                     <Box className={classes.accordionArea}>
-                      <Typography>Total price: {order.totalPrice} $</Typography>
+                      <Typography>
+                        Total price: {order.totalPrice} coins
+                      </Typography>
                       <Typography>
                         Order date:{" "}
                         {moment(order.createdAt).format("MMM Do YYYY, h:mm a")}
@@ -70,10 +71,10 @@ const UserAccountPageLayout = ({ info, ordersList, classes, isLoading }) => {
                       <Table size="small" aria-label="a dense table">
                         <TableHead>
                           <TableRow>
-                            <TableCell>NAME</TableCell>
-                            <TableCell align="left">IMAGE</TableCell>
-                            <TableCell align="left">QUANTITY</TableCell>
-                            <TableCell align="left">PRICE</TableCell>
+                            <TableCell>Name</TableCell>
+                            <TableCell align="left">Image</TableCell>
+                            <TableCell align="left">Quantity</TableCell>
+                            <TableCell align="left">Price</TableCell>
                           </TableRow>
                         </TableHead>
                         <TableBody>
@@ -88,7 +89,9 @@ const UserAccountPageLayout = ({ info, ordersList, classes, isLoading }) => {
                               <TableCell align="left">
                                 {item.quantity}
                               </TableCell>
-                              <TableCell align="left">{item.price} $</TableCell>
+                              <TableCell align="left">
+                                {item.price} coins
+                              </TableCell>
                             </TableRow>
                           ))}
                         </TableBody>

@@ -1,8 +1,4 @@
-import {
-  Button,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Button, Typography, Box } from "@mui/material";
 import { withStyles } from "@mui/styles";
 
 import styles from "./styles";
@@ -20,17 +16,13 @@ const MaterialCard = ({
   return (
     <Box className={classes.cardWrapper}>
       <Box className={classes.image}>
-        <img src={image} alt={name}  onClick={handleGoToDetails}/>
+        <img src={image} alt={name} onClick={handleGoToDetails} />
       </Box>
       <Box className={classes.cardContent}>
-        <Typography
-          className={classes.name}
-          gutterBottom
-          variant="h5"
-        >
+        <Typography gutterBottom variant="h5">
           {name}
         </Typography>
-        <Typography variant="body2">Price: {price} $</Typography>
+        <Typography variant="body1">Price: {price} coins</Typography>
       </Box>
       <Box className={classes.button}>
         <Button

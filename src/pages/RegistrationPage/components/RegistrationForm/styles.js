@@ -47,6 +47,11 @@ const styles = () => ({
   snackBar: {
     display: "flex",
   },
+
+  snackBarBtn: {
+    marginTop: "10px",
+    textAlign: "center",
+  },
 });
 
 export default styles;

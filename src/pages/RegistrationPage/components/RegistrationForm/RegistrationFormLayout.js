@@ -128,15 +128,17 @@ const RegistrationForm = ({
         <Box className={classes.snackBar}>
           <Snackbar open={isOpen} onClose={handleClose}>
             <Alert icon={<CheckIcon fontSize="inherit" />} severity="success">
-              Your profile has been successfully created{" "}
-              <Button
-                onClick={handleGoToLoginPage}
-                variant="contained"
-                color="success"
-                size="small"
-              >
-                LOGIN
-              </Button>
+              Your profile has been successfully created
+              <Box className={classes.snackBarBtn}>
+                <Button
+                  onClick={handleGoToLoginPage}
+                  variant="contained"
+                  color="success"
+                  size="small"
+                >
+                  LOGIN
+                </Button>
+              </Box>
             </Alert>
           </Snackbar>
         </Box>
